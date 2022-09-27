@@ -15,10 +15,21 @@ public class App {
        Autor objAutor1 = new Autor("Jose", 7, "Medicina");
        //Autor objAutor2 = new Autor("Joao", "Robotica");
 
+       Livro l = new Livro();
+       l.setTitulo("Programando em Java");
+       l.setAnoLancamento(2022);
+       l.setEditora("Editora xyz");
+       l.setNpag(220);
+       l.setAutor(objAutor1);
+
+        Emprestimo novoEmprestimo = new Emprestimo(l, objFunc1, objCamila);
+
        System.out.println(objCamila);
        System.out.println("_____________________________________________________________");
        System.out.println(objFunc1);
        System.out.println("_____________________________________________________________");
        System.out.println(objAutor1);
+       System.out.println("_____________________________________________________________");
+       System.out.println(novoEmprestimo);
     }
 }
